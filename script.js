@@ -11,6 +11,7 @@ Exercise 1 has been completed for you:
 */
 
 // Worked out the problem myself to check my work against the GA provided answer below
+// example of declarative function:
 
 function maxOfTwoNumbers (x, y) {
     console.log(x)
@@ -23,7 +24,7 @@ function maxOfTwoNumbers (x, y) {
 }
 console.log("Exercise 1 Result: ", maxOfTwoNumbers(2, 12))
 
-
+// example of function expression:
 const maxOfTwoNumbersGaAnswer = (x, y) => {
     if (x >= y) {
       return x;
@@ -33,5 +34,6 @@ const maxOfTwoNumbersGaAnswer = (x, y) => {
   }
   
   console.log("Exercise 1 Result: ", maxOfTwoNumbersGaAnswer(3, 9));
+
 
   
