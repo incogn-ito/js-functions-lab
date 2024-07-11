@@ -202,3 +202,89 @@ function calculateTip(x, y) {
 console.log('Exercise 7 Result:', calculateTip(50, 20));
 console.log('Exercise 7 Result:', calculateTip(100, 20));
 
+/*
+Exercise 8: convertTemperature()
+
+Write a function named convertTemperature. 
+It takes two arguments: a temperature and a string representing the 
+scale ('C' for Celsius, 'F' for Fahrenheit). 
+Convert the temperature to the other scale.
+
+Example: convertTemperature(32, 'C') should return 89.6 (Fahrenheit).
+Example: convertTemperature(32, 'F') should return 0 (Celsius).
+
+Complete the exercise in the space below:
+*/
+
+// farenheit = (tempC) * (1.8) + 32
+// celsius = ((tempF - 32)) / 1.8
+
+// function convertTemperture (x, str) {
+//   let newTemp
+//   if (str === "C") {
+//   }
+
+// const convertTemperature = (x, str) => {
+//   let newTemp
+//   if (str === "C") {
+//     let newTemp = `${("The new temperature is ") + ((x * 1.8) + 32) + "F"}`
+//   } else if (str === "F") {
+//     let newTemp = `${("The new temperature is ") + ((x - 32) / 1.8) + "C"}`
+//   }
+//   return newTemp
+// }
+
+function convertTemperature(x, str) {
+  let newTemp
+  if (str === "C") {
+    let newTemp = `${("The new temperature is ") + ((x * 1.8) + 32) + "F"}`
+      return newTemp
+    } else {
+      let newTemp = `${("The new temperature is ") + ((x - 32) / 1.8) + "C"}`
+        return newTemp
+    }
+}
+
+console.log('Exercise 8 Result:', convertTemperature(32, "C"));
+console.log('Exercise 8 Result:', convertTemperature(32, "F"));
+
+
+/*
+Exercise 9: basicCalculator()
+
+Create a function named basicCalculator. 
+It should take three arguments: two numbers and a string representing 
+an operation ('add', 'subtract', 'multiply', 'divide'). 
+Perform the provided operation on the two numbers. 
+In operations where the order of numbers is important, 
+treat the first parameter as the first operand and the 
+second parameter as the second operand.
+
+Example: basicCalculator(10, 5, 'subtract') should return 5.
+
+Complete the exercise in the space below:
+*/
+
+
+function basicCalculator(x, y, str) {
+  let myMath
+  if (str === "subtract") {
+    let myMath = x - y
+    return myMath
+  } else if (str === "add") {
+    let myMath = x + y
+    return myMath
+  } else if (str === "divide") {
+    let myMath = x / y
+    return myMath
+  } else if (str === "multiply") {
+    let myMath = x * y
+    return myMath 
+  }
+}
+console.log('Exercise 9 Result:', basicCalculator(10, 5, "subtract"));
+console.log('Exercise 9 Result:', basicCalculator(10, 15, "add"));
+console.log('Exercise 9 Result:', basicCalculator(20, 5, "divide"));
+console.log('Exercise 9 Result:', basicCalculator(10, 5, "multiply"));
+
+
